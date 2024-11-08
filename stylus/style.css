@@ -1,1 +1,22 @@
 @charset 'UTF-8';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: rgb(240, 238, 238);
+}
+
+.header{
+    background-color: #2b6b8e;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
