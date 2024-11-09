@@ -1,6 +1,14 @@
 @charset 'UTF-8';
 
 
+
+:root{
+    --cor1: #c6caed;
+    --cor2: #2B6B8E;
+    --cor3: #282884;
+    --cor4: #0e0e52;
+
+}
 *{
     margin: 0;
     padding: 0;
@@ -8,15 +16,164 @@
 
 }
 
+p{
+    text-indent: 30px;
+    max-width: 850px;
+    min-width: 300px;
+    margin: auto;
+    padding-bottom:  20px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.09rem;
+}
 body{
-    background-color: rgb(240, 238, 238);
+    background-color: var(--cor1);
+
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    background-color: var(--cor3);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    padding-left: 20px;
+    box-shadow: 0px 1px 4px black;
 }
 
 .header{
-    background-color: #2b6b8e;
+    background-color: var(--cor4);
     display: flex;
     padding: 1rem;
     justify-content: space-between;
     align-items: center;
+    color: white;
+    text-shadow: 4px 2px 3px black;
 }
 
+.nome{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 30px;
+    margin: 20px;
+}
+
+.primeiro-nome{
+    font-size: 3rem;
+}
+.sobrenome{
+    font-size: 4rem;
+}
+.foto-redonda{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    object-fit: cover;
+    padding: 0.5rem;
+}
+
+nav{
+    background-color: var(--cor4);
+    padding: 10px;
+}
+
+nav a{
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    padding: 10px 15px 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition-duration: .5s;
+    font-weight: bold;
+}
+
+nav a:hover{
+    background-color: var(--cor3);
+}
+
+
+main{
+    background-color: white;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
+    padding-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.342);
+}
+
+#boasvindas{
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.568);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 0px 0px 5px 5px;
+    padding: 30px;
+}
+
+#introducao{
+    text-indent: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    padding: 8px;
+    max-width: 750px;
+    min-width: 300px;
+    margin: auto;
+    text-align: justify;
+}
+#video{
+    text-align: center;
+}
+#video h2{
+    /* text-align: center; */
+}
+#video p{
+    text-align: center;
+    font-weight: bold;
+}
+#video iframe{
+
+    border-radius: 8px;
+    border: 2px solid #ccc;
+}
+#hardskills {
+    display: flex;                    /* Ativa o Flexbox */
+    justify-content: space-evenly;     /* Distribui os itens igualmente, com espaços entre eles */
+    align-items: center;               /* Alinha verticalmente as imagens no centro */
+    padding: 20px;                     /* Adiciona um espaço de 20px ao redor do conteúdo */
+    gap: 20px;
+    flex-wrap: wrap;                          /* Espaçamento entre as imagens */
+}
+
+#hardskills a {
+    display: block;                    /* Faz o link se comportar como um bloco, para facilitar o controle do layout */
+    text-align: center;                /* Garante que as imagens fiquem centralizadas no link */
+}
+
+#hardskills img {
+    height: auto;                      /* Mantém a proporção da imagem */
+    border-radius: 8px;                /* Arredonda as bordas das imagens, se desejar */
+    transition: transform 0.3s ease;   /* Transição para o efeito de hover */
+}
+
+/* Efeito de hover nas imagens */
+#hardskills img:hover {
+    transform: scale(1.1);             /* Aumenta o tamanho da imagem quando o mouse passa sobre ela */
+}
+
+
+
+footer{
+    background-color: --c;
+    padding: 20px;
+    text-align: center;
+    color: white;
+
+}
+footer a{
+    color: white;
+}
+
+}

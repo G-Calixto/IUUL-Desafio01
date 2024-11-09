@@ -6,10 +6,11 @@
     <title>Página Inicial</title>
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="stylus/style.css">
+   
 </head>
 <body>
     <header class="header">
-        <div class="nome">
+        <div class="noem">
             <h1><span class="primeiro-nome">Gabriel</span><br><span class="sobrenome">Calixto</span></h1>
         </div>
         <div class="foto-perfil">
@@ -18,20 +19,54 @@
     </header>
     <nav>
         <a href="#">Home</a>
-        <a href="sobre-mim.html">Sobre mim</a>
         <a href="#">Portfólio</a>
         <a href="#">Contato</a>
     </nav>
     <main>
         <section>
-            <p>Seja bem-vindo ao meu cantinho na web! Meu nome é Gabriel Calixto, eu tenho 22 anos e aqui você encontrará um pouco da minha jornada e dos projetos que me entusiasmaram ao longo do caminho no desenvolvimento.</p>
+            <h2 id="boasvindas">Seja bem-vindo ao meu cantinho na web!</h2>
+            <p id="introducao">Aqui você encontrará um pouco sobre mim, quem eu sou e como me tornei, além de um pouco da minha jornada e dos projetos que desenvolvi e que muito me ensinaram ao longo do caminho no desenvolvimento.</p>
+        </section>
+        <article>
+            <h2>Sobre mim</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis adipisci iusto neque, doloribus quas quam quod dolore alias necessitatibus enim earum ipsa totam distinctio minus, rem perferendis corrupti! Quas, ab. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem dolor animi laborum nam ducimus mollitia modi voluptas placeat nostrum alias aliquam reprehenderit, saepe facere iure ipsum quae cupiditate recusandae pariatur!</p>
+        </article>
+        <article>
+            <h2>Minha Jornada Acadêmica</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique beatae voluptate voluptas rem, voluptatibus nisi ipsum ad culpa, nostrum quae numquam hic odio animi quis necessitatibus suscipit quisquam et soluta!</p>
+        </article>
+        <article>
+            <h2>Minha jornada profissional</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto incidunt repellat ratione eveniet fugiat natus aperiam dolor magni fugit ut, voluptatum cupiditate alias neque iusto minima qui quaerat labore inventore.
+            </p>
+        </article>
+
+        <section id="video">
+            <h2>PARA MOTIVAR!</h2>
+            <p>
+                Um pequeno video para quando se precisa de um gás especial!
+             </p>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GdHOytOGfqc?si=2azWKRKPdYsgGlci" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
         <section>
-            <h2>Skills</h2>
-            <a href="#front"><img src="imagens/html5-logo.png" alt="logo HTML5"></a>
-            <a href="#front"><img src="imagens/css-logo.png" alt="logo CSS3"></a>
-            <a href="#front"><img src="imagens/js-logo.png" alt="logo JavaScript"></a>
-            <a href="#beck"><img src="imagens/python-logo.png" alt="logo Python"></a>
+            <!-- LINK LEVA A PAGINA DO PORTFOLIO REFERENTE A ESSE CONTEUDO -->
+            <h2>Hard Skills</h2>
+            <content  id="hardskills">
+                <a href="#front"><img src="imagens/html5-logo.png" alt="logo HTML5"></a>
+                <a href="#front"><img src="imagens/css-logo.png" alt="logo CSS3"></a>
+                <a href="#front"><img src="imagens/js-logo.png" alt="logo JavaScript"></a>
+                <a href="#beck"><img src="imagens/python-logo.png" alt="logo Python"></a>
+            </content>
+        </section>
+        <!-- FAZER JANELA MOLDAL -->
+        <section id="softskills">
+            <h2>Soft Skills</h2>
+            <a href="#">Blábláblá</a>
+            <a href="#">Bláblá</a>
+            <a href="#">BláBláBlá</a>
+            <a href="#">BlaBlaBla</a>
         </section>
     </main>
     <footer>
